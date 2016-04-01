@@ -199,7 +199,7 @@ public class MyArrayList<E> implements List<E> {
 	public E remove(int index) {
 		// TODO: fill in this method.
 		if (index < 0 || index >= size) {
-			throws new IndexOutOfBoundsException();
+			throw new IndexOutOfBoundsException();
 		}
 		E removed = array[index];
 		for (int i = index; i < size - 1; i++) {
